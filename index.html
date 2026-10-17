@@ -99,7 +99,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 .fx.in{opacity:1;transform:none}
 
 /* marquee */
-.band{position:relative;z-index:2;background:var(--orange);color:var(--night);transform:rotate(-1.6deg) scale(1.03);margin:-28px 0 0;padding:20px 0;overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
+.band{position:relative;z-index:2;background:var(--orange);color:var(--night);transform:rotate(-1.6deg);width:110%;margin:-28px 0 0 -5%;padding:20px 0;overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
 .band-track{display:flex;width:max-content;will-change:transform}
 .band-item{display:flex;align-items:center;gap:30px;padding-right:30px;white-space:nowrap;font-stretch:120%;font-weight:800;font-size:clamp(26px,3.2vw,46px);letter-spacing:-.015em;line-height:1}
 .band-item svg{width:.95em;height:.95em;flex:none}
@@ -380,7 +380,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
       <h2 class="display split" data-split>Garanta sua Yamaha em 2 minutos.</h2>
       <p class="lead fx">Preencha seus dados e um consultor da VLoca chama você no WhatsApp pra pedir os documentos e agendar a retirada.</p>
       <ul class="req">
-        <li class="fx" style="--d:100ms"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>CNH categoria A, definitiva ou provisória</li>
+        <li class="fx" style="--d:100ms"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>CNH categoria A com menos de 40 pontos</li>
         <li class="fx" style="--d:180ms"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Comprovante de residência</li>
         <li class="fx" style="--d:260ms"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Sem consulta ao Serasa e sem fiador</li>
       </ul>
@@ -439,8 +439,8 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
       <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>IPVA e licenciamento</li>
       <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Manutenção preventiva e troca de óleo</li>
       <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Rastreador</li>
-      <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Suporte 24h com moto reserva, conforme disponibilidade</li>
-      <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Suporte de celular</li>
+      <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Suporte 24h com moto reserva, conforme o plano escolhido</li>
+      <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg></span>Suporte de celular com carregador</li>
     </ul>
   </div>
 </section>
@@ -455,7 +455,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
         <div class="need-box yes fx" style="--d:100ms">
           <h3>Você precisa de</h3>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>CNH categoria A válida</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>CNH categoria A com menos de 40 pontos</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Documento com foto</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Comprovante de residência</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Ter 18 anos ou mais</li>
@@ -523,7 +523,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
       </figure>
       <figure class="voice fx" style="margin:0;--d:150ms">
         <blockquote>“Melhor escolha para quem trabalha com aplicativo.”</blockquote>
-        <figcaption class="who"><span><strong>Melina</strong>Motoboy VLoca</span><span class="stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg></span></figcaption>
+        <figcaption class="who"><span><strong>Lucas</strong>Motoboy VLoca</span><span class="stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg></span></figcaption>
       </figure>
     </div>
   </div>
@@ -536,11 +536,11 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
       <p class="lead fx">Se ficar alguma pergunta, o consultor responde no WhatsApp depois do cadastro.</p>
     </div>
     <div class="qas">
-      <div class="qa fx"><button type="button" aria-expanded="false">Quais são os requisitos?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="ans"><p>CNH categoria A válida, documento com foto, comprovante de residência, maioridade e aprovação cadastral.</p></div></div>
+      <div class="qa fx"><button type="button" aria-expanded="false">Quais são os requisitos?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="ans"><p>CNH categoria A válida e com menos de 40 pontos (para quem usa a moto para trabalhar), documento com foto, comprovante de residência, maioridade e aprovação cadastral.</p></div></div>
       <div class="qa fx" style="--d:60ms"><button type="button" aria-expanded="false">A manutenção é mesmo inclusa?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="ans"><p>Sim. O aluguel já inclui manutenção preventiva e troca de óleo, além de suporte prioritário.</p></div></div>
       <div class="qa fx" style="--d:120ms"><button type="button" aria-expanded="false">Consigo retirar a moto no mesmo dia?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="ans"><p>Sim, conforme disponibilidade. Na maioria dos casos, a liberação acontece no mesmo dia.</p></div></div>
       <div class="qa fx" style="--d:180ms"><button type="button" aria-expanded="false">Como funciona a caução?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="ans"><p>É pedida uma caução de segurança facilitada, devolvida ao final do contrato se não houver pendências.</p></div></div>
-      <div class="qa fx" style="--d:240ms"><button type="button" aria-expanded="false">E se a moto quebrar no meio da corrida?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="ans"><p>O suporte 24h atende você, com moto reserva conforme disponibilidade.</p></div></div>
+      <div class="qa fx" style="--d:240ms"><button type="button" aria-expanded="false">E se a moto quebrar no meio da corrida?<span class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="ans"><p>O suporte 24h atende você, com moto reserva conforme o plano escolhido.</p></div></div>
     </div>
   </div>
 </section>
