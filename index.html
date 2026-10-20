@@ -33,7 +33,7 @@ button,input,select{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
 .wrap{width:min(1240px,calc(100% - 40px));margin:0 auto}
 .display{font-stretch:115%;font-weight:800;letter-spacing:-.025em;line-height:.94;margin:0;text-wrap:balance}
-h2.display{font-size:clamp(38px,5.4vw,78px)}
+h2.display{font-size:clamp(30px,4.1vw,58px)}
 .lead{font-size:clamp(17px,1.45vw,20px);line-height:1.6;max-width:36em;margin:0}
 
 /* progress + header */
@@ -86,7 +86,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 .price strong{font-stretch:115%;font-weight:800;font-size:clamp(40px,4.4vw,58px);line-height:1;letter-spacing:-.02em}
 .price strong em{font-style:normal;font-size:.38em;font-weight:600;color:var(--mute-d);margin-left:6px;letter-spacing:0}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
-.scroll-cue{position:absolute;right:max(20px,calc((100vw - 1240px)/2));bottom:34px;display:flex;align-items:center;gap:12px;font-size:13px;color:var(--mute-d)}
+.scroll-cue{position:absolute;right:max(20px,calc((100% - 1240px)/2));bottom:34px;display:flex;align-items:center;gap:12px;font-size:13px;color:var(--mute-d)}
 .scroll-cue i{display:block;width:1px;height:46px;background:rgba(255,255,255,.2);position:relative;overflow:hidden}
 .scroll-cue i::after{content:"";position:absolute;left:0;top:-50%;width:1px;height:50%;background:var(--orange);animation:cue 1.8s var(--ease) infinite}
 @keyframes cue{to{top:100%}}
@@ -98,15 +98,9 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 .fx{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0ms)}
 .fx.in{opacity:1;transform:none}
 
-/* marquee */
-.band{position:relative;z-index:2;background:var(--orange);color:var(--night);transform:rotate(-1.6deg);width:110%;margin:-28px 0 0 -5%;padding:16px 5%;overflow:hidden;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
-.band-track{display:flex;justify-content:center}
-.band-item{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 18px;max-width:none;font-stretch:112%;font-weight:800;font-size:clamp(13px,1.1vw,17px);letter-spacing:-.005em;line-height:1.2}
-.band-item span{white-space:nowrap}
-.band-item svg{width:.9em;height:.9em;flex:none}
 
 /* form */
-.formsec{background:var(--paper);color:var(--ink);padding:clamp(110px,12vw,160px) 0 clamp(80px,10vw,130px);position:relative}
+.formsec{background:var(--paper);color:var(--ink);padding:clamp(80px,9vw,120px) 0 clamp(80px,10vw,120px);position:relative}
 .formgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(40px,6vw,90px);align-items:center}
 .formsec .lead{color:var(--mute);margin-top:24px}
 .req{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:14px}
@@ -203,26 +197,39 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 .crow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1.15fr);font-size:clamp(14px,1.3vw,18px);transition:background .3s}
 .crow+.crow{border-top:1px solid var(--line)}
 .crow>div{padding:clamp(14px,1.8vw,22px) clamp(12px,2vw,28px);display:flex;align-items:center;gap:10px}
-.crow:not(.chead):hover{background:#F7F8FB}
+.crow:not(.chead):hover{background:#FAFAFB}
 .crow .k{font-weight:600}
-.crow .v{background:rgba(23,57,181,.06);font-weight:600;color:var(--blue)}
-.crow .v svg{flex:none;width:20px;height:20px;color:#1F8A4C}
+.crow .v{background:#FFF1E6;font-weight:600;color:#A83A00}
+.crow .v svg{flex:none;width:20px;height:20px;color:#E04E00}
 .crow .f{color:var(--mute)}
 .chead{background:var(--night);color:#fff;font-weight:700}
-.chead .v{background:var(--royal);color:#fff}
+.chead .v{background:var(--orange);color:#fff}
 .compare-cta{margin-top:36px}
 
 /* testimonials */
-.voices{background:var(--night-2);color:#fff;padding:clamp(90px,11vw,150px) 0;position:relative;overflow:hidden}
-.voices .qmark{position:absolute;right:-2vw;top:-6vw;font-stretch:125%;font-weight:900;font-size:clamp(260px,34vw,520px);line-height:1;color:rgba(255,255,255,.04);pointer-events:none;user-select:none}
-.vgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px);margin-top:clamp(40px,5vw,64px)}
-.voice{border-top:2px solid var(--orange);padding-top:28px;transition:transform .5s var(--ease)}
-.voice:hover{transform:translateY(-6px)}
-.voice blockquote{margin:0;font-stretch:112%;font-weight:700;font-size:clamp(26px,2.8vw,40px);line-height:1.12;letter-spacing:-.02em}
-.voice .who{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:26px;font-size:15px;color:var(--mute-d)}
-.voice .who strong{color:#fff;font-weight:700;margin-right:8px}
-.stars{display:flex;gap:3px;color:var(--orange)}
-.stars svg{width:18px;height:18px;fill:currentColor}
+.voices{background:var(--night-2);color:#fff;padding:clamp(80px,10vw,140px) 0;position:relative}
+.vwrap{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.6fr);gap:clamp(32px,5vw,72px);align-items:center}
+.vhead .lead{color:var(--mute-d);margin-top:18px;font-size:17px}
+.varrows{display:flex;gap:10px;margin-top:32px}
+.varrows[hidden]{display:none!important}
+.vfoot-arrows{display:none}
+.varrow{width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(255,255,255,.28);background:transparent;color:#fff;display:grid;place-items:center;cursor:pointer;transition:background .3s,border-color .3s,opacity .3s}
+.varrow svg{width:20px;height:20px}
+.varrow:hover:not(:disabled){background:var(--orange);border-color:var(--orange)}
+.varrow:disabled{opacity:.3;cursor:default}
+.vtrack{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:8px 0 14px;min-width:0}
+.vtrack::-webkit-scrollbar{display:none}
+.vcard{flex:0 0 calc((100% - 20px)/2);min-width:0;scroll-snap-align:start;margin:0;background:#FFF5EE;color:var(--ink);border-radius:26px;padding:clamp(24px,2.6vw,36px);display:flex;flex-direction:column;gap:22px;min-height:320px;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.vcard:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+.vq{display:block;width:52px;height:40px;color:var(--orange)}
+.vcard blockquote{margin:0;flex:1;font-size:clamp(17px,1.35vw,19px);line-height:1.6;color:#2E3650}
+.vcard blockquote b{color:var(--ink);font-weight:700}
+.vwho{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.vav{flex:none;width:54px;height:54px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-stretch:115%;font-weight:800;font-size:22px;box-shadow:0 0 0 3px #fff,0 6px 16px -6px rgba(255,90,0,.6)}
+.vwho strong{display:block;font-size:18px;font-weight:700;color:var(--ink);line-height:1.2}
+.vwho span span{display:block;font-size:15px;color:var(--mute)}
+.stars{display:flex;gap:3px;color:var(--orange);margin-left:auto}
+.stars svg{width:16px;height:16px;fill:currentColor}
 
 /* faq */
 .faq{background:var(--paper);color:var(--ink);padding:clamp(90px,11vw,150px) 0}
@@ -241,7 +248,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 /* final */
 .final{position:relative;background:var(--night);color:#fff;padding:clamp(110px,14vw,190px) 0;overflow:hidden;isolation:isolate}
 .final::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(520px circle at var(--fx,50%) var(--fy,50%),rgba(255,90,0,.22),transparent 70%);transition:background .1s}
-.final .display{font-size:clamp(48px,8.4vw,136px);max-width:9em}
+.final .display{font-size:clamp(38px,6.2vw,96px);max-width:9em}
 .final .lead{color:var(--mute-d);margin-top:28px}
 .final-row{display:flex;flex-wrap:wrap;align-items:center;gap:20px 36px;margin-top:44px}
 .final-row .note{font-size:15px;color:var(--mute-d)}
@@ -253,11 +260,10 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 .foot strong{display:block;color:#fff;font-weight:600;margin-bottom:8px}
 .foot-note{margin:44px 0 0;padding-top:24px;border-top:1px solid var(--line-d);font-size:13px;color:#7D879E}
 
+.vl-root{position:relative;width:100%;max-width:100%;overflow-x:hidden}
+@supports (overflow:clip){.vl-root{overflow-x:clip}}
+html,body{max-width:100%;overflow-x:hidden}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-/* mobile cta */
-.mcta{position:fixed;left:14px;right:14px;bottom:14px;z-index:45;display:none;transform:translateY(140%);transition:transform .5s var(--ease)}
-.mcta.show{transform:none}
-.mcta .btn{width:100%}
 
 @media (max-width:980px){
   .head-nav .link{display:none}
@@ -276,7 +282,6 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
   .how-step .num{position:absolute;left:-80px;top:-6px}
   .how-step h3{margin-top:0}
   .reveal-img{aspect-ratio:4/4.4;max-height:640px}
-  .mcta{display:block}
   .scroll-cue{display:none}
 }
 @media (max-width:640px){
@@ -292,31 +297,35 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
   .hero-row{gap:24px}
   .hero-ctas{width:100%}
   .hero-ctas .btn{flex:1 1 100%}
-  .band{margin-top:-14px;padding:14px 8%}
-  .band-item{gap:6px 18px;font-size:14px}
-  .band-item .xs-hide,.band-item svg{display:none}
   .need{grid-template-columns:minmax(0,1fr)}
-  .vgrid{grid-template-columns:minmax(0,1fr);gap:44px}
+  .vwrap{grid-template-columns:minmax(0,1fr)}
+  .vcard{flex-basis:86%;min-height:0}
+  .vhead .varrows{display:none}
+  .vfoot-arrows{display:flex;margin-top:22px}
   .foot-grid{grid-template-columns:minmax(0,1fr)}
   .qa .ans p{padding-right:0}
-  .crow{grid-template-columns:minmax(0,.9fr) minmax(0,1fr) minmax(0,1fr)}
-  .crow>div{padding:14px 10px}
+  .crow{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);font-size:13.5px;line-height:1.4}
+  .crow>div{padding:13px 9px;min-width:0;overflow-wrap:anywhere;hyphens:auto;-webkit-hyphens:auto}
+  .chead>div{font-size:14px}
   .crow .v svg{display:none}
   .card{border-radius:22px}
-  /* hero mobile: moto em destaque, texto abaixo */
-  .hero{display:block;min-height:0;background:var(--night)}
+  /* hero mobile: ocupa exatamente a tela, CTA sempre visível ao abrir */
+  .hero{display:flex;flex-direction:column;align-items:stretch;min-height:100vh;min-height:100svh;background:var(--night)}
   .hero::before,.hero::after,.speed{display:none}
-  .hero-media{position:relative;inset:auto;height:clamp(340px,54svh,500px);overflow:hidden;transform:none;transition:none}
-  .hero-media img{object-position:71% 62%;transform:scale(var(--hs,1.12));transition:transform 1.6s cubic-bezier(.15,.8,.2,1)}
-  .hero-media::before{content:"";position:absolute;inset:0 0 auto 0;height:120px;z-index:1;background:linear-gradient(180deg,rgba(5,11,26,.75),rgba(5,11,26,0))}
-  .hero-media::after{content:"";position:absolute;inset:auto 0 0 0;height:32%;z-index:1;background:linear-gradient(0deg,var(--night) 0%,rgba(5,11,26,0) 100%)}
-  .hero-in{padding:8px 0 44px}
-  .hero h1{font-size:clamp(40px,11vw,52px)}
-  .hero .lead{margin-top:18px}
-  .hero-row{margin-top:28px}
+  .hero-media{position:relative;inset:auto;flex:1 1 0;min-height:170px;max-height:500px;overflow:hidden;transform:none;transition:none}
+  .hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:71% 62%;transform:scale(var(--hs,1.12));transition:transform 1.6s cubic-bezier(.15,.8,.2,1)}
+  .hero-media::before{content:"";position:absolute;inset:0 0 auto 0;height:110px;z-index:1;background:linear-gradient(180deg,rgba(5,11,26,.75),rgba(5,11,26,0))}
+  .hero-media::after{content:"";position:absolute;inset:auto 0 0 0;height:38%;z-index:1;background:linear-gradient(0deg,var(--night) 0%,rgba(5,11,26,0) 100%)}
+  .hero-in{flex:none;margin-top:-24px;position:relative;z-index:2;padding:0 0 calc(22px + env(safe-area-inset-bottom))}
+  .hero h1{font-size:clamp(33px,9.4vw,46px)}
+  .hero .lead{margin-top:12px;font-size:15.5px;line-height:1.5}
+  .hero-row{margin-top:20px}
+  .hero-ctas{gap:10px}
+  .hero-ctas .btn{min-height:54px}
+  .hero-ctas .btn.ghost{min-height:48px}
   /* formulário mobile: só o título acima do card */
   .formsec .lead,.formsec .req{display:none}
-  .formsec{padding-top:84px}
+  .formsec{padding-top:64px;padding-bottom:72px}
   .formgrid{gap:28px}
 }
 @media (prefers-reduced-motion:reduce){
@@ -329,6 +338,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 </style>
 </head>
 <body>
+<div class="vl-root">
 <div class="progress" aria-hidden="true"></div>
 
 <header class="head" id="topo">
@@ -351,11 +361,7 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
     <h1 class="display split" data-split>Moto pra rodar hoje. Sem Serasa, sem fiador.</h1>
     <p class="lead fx" style="--d:500ms">Aluguel de Yamaha Factor 150 em Goiânia e região. Seguro, IPVA, manutenção e rastreador inclusos, num valor fixo por dia.</p>
     <div class="hero-row">
-      <div class="price fx" style="--d:650ms">
-        <small>A partir de</small>
-        <strong>R$ 43,57<em>/dia</em></strong>
-      </div>
-      <div class="hero-ctas fx" style="--d:780ms">
+      <div class="hero-ctas fx" style="--d:650ms">
         <a class="btn mag" href="#formulario"><span>Quero minha Yamaha</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn ghost mag" href="#incluso"><span>Ver o que está incluso</span></a>
       </div>
@@ -364,18 +370,6 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
   <div class="scroll-cue" aria-hidden="true"><i></i>Role para ver</div>
 </section>
 
-<div class="band">
-  <div class="band-track">
-    <div class="band-item">
-      <span>Sem consulta ao Serasa</span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M2 9h17l-9 22H2z" fill="currentColor"/><path d="M15 9h23l-4 9H11z" fill="currentColor"/><path d="M13 22h18l-4 9H9z" fill="currentColor"/></svg>
-      <span>Sem fiador</span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M2 9h17l-9 22H2z" fill="currentColor"/><path d="M15 9h23l-4 9H11z" fill="currentColor"/><path d="M13 22h18l-4 9H9z" fill="currentColor"/></svg>
-      <span>Aprovação no mesmo dia</span><svg class="xs-hide" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 9h17l-9 22H2z" fill="currentColor"/><path d="M15 9h23l-4 9H11z" fill="currentColor"/><path d="M13 22h18l-4 9H9z" fill="currentColor"/></svg>
-      <span class="xs-hide">Yamaha Factor 150</span><svg class="xs-hide" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 9h17l-9 22H2z" fill="currentColor"/><path d="M15 9h23l-4 9H11z" fill="currentColor"/><path d="M13 22h18l-4 9H9z" fill="currentColor"/></svg>
-      <span class="xs-hide">Seguro e IPVA inclusos</span><svg class="xs-hide" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 9h17l-9 22H2z" fill="currentColor"/><path d="M15 9h23l-4 9H11z" fill="currentColor"/><path d="M13 22h18l-4 9H9z" fill="currentColor"/></svg>
-      <span class="xs-hide">Suporte 24h</span>
-    </div>
-  </div>
-</div>
 
 <section class="formsec">
   <div class="wrap formgrid">
@@ -504,11 +498,11 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
     <p class="lead fx">No financiamento, o que dá errado sai do seu bolso. No aluguel VLoca, já está coberto.</p>
     <div class="ctable" role="table" aria-label="Aluguel VLoca comparado ao financiamento de moto usada">
       <div class="crow chead" role="row"><div role="columnheader"><span class="sr">Item</span></div><div class="v" role="columnheader">Aluguel VLoca</div><div role="columnheader">Financiar usada</div></div>
-      <div class="crow fx" role="row"><div class="k" role="cell">Juros</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Sem juros</div><div class="f" role="cell">Juros do financiamento</div></div>
-      <div class="crow fx" role="row" style="--d:60ms"><div class="k" role="cell">IPVA e licenciamento</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Inclusos</div><div class="f" role="cell">Por sua conta</div></div>
+      <div class="crow fx" role="row"><div class="k" role="cell">Juros</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Sem juros</div><div class="f" role="cell">Juros do financia&shy;mento</div></div>
+      <div class="crow fx" role="row" style="--d:60ms"><div class="k" role="cell">IPVA e licencia&shy;mento</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Inclusos</div><div class="f" role="cell">Por sua conta</div></div>
       <div class="crow fx" role="row" style="--d:120ms"><div class="k" role="cell">Seguro</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Incluso</div><div class="f" role="cell">Por sua conta</div></div>
-      <div class="crow fx" role="row" style="--d:180ms"><div class="k" role="cell">Manutenção</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Preventiva e troca de óleo inclusas</div><div class="f" role="cell">Surpresa no orçamento</div></div>
-      <div class="crow fx" role="row" style="--d:240ms"><div class="k" role="cell">Rastreador</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Incluso</div><div class="f" role="cell">Não incluso</div></div>
+      <div class="crow fx" role="row" style="--d:180ms"><div class="k" role="cell">Manuten&shy;ção</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Preventiva e troca de óleo inclusas</div><div class="f" role="cell">Surpresa no orçamento</div></div>
+      <div class="crow fx" role="row" style="--d:240ms"><div class="k" role="cell">Rastrea&shy;dor</div><div class="v" role="cell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>Incluso</div><div class="f" role="cell">Não incluso</div></div>
       <div class="crow fx" role="row" style="--d:300ms"><div class="k" role="cell">Se desistir</div><div class="v" role="cell">Perde a caução*</div><div class="f" role="cell">Perde o valor investido</div></div>
     </div>
     <div class="compare-cta fx"><a class="btn mag" href="#formulario"><span>Quero a diferença VLoca</span></a></div>
@@ -516,18 +510,26 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
 </section>
 
 <section class="voices">
-  <span class="qmark" aria-hidden="true">“</span>
-  <div class="wrap">
-    <h2 class="display split" data-split>Quem já roda com a gente.</h2>
-    <div class="vgrid">
-      <figure class="voice fx" style="margin:0">
-        <blockquote>“Atendimento excelente e motos sempre revisadas.”</blockquote>
-        <figcaption class="who"><span><strong>Ricardo</strong>Motoboy VLoca</span><span class="stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg></span></figcaption>
-      </figure>
-      <figure class="voice fx" style="margin:0;--d:150ms">
-        <blockquote>“Melhor escolha para quem trabalha com aplicativo.”</blockquote>
-        <figcaption class="who"><span><strong>Lucas</strong>Motoboy VLoca</span><span class="stars" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg></span></figcaption>
-      </figure>
+  <div class="wrap vwrap">
+    <div class="vhead">
+      <h2 class="display split" data-split>Quem já roda com a gente.</h2>
+      <p class="lead fx">Avaliações de motoboys que trabalham todos os dias com uma Yamaha VLoca.</p>
+      <div class="varrows "><button class="varrow" type="button" data-dir="-1" aria-label="Depoimento anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button class="varrow" type="button" data-dir="1" aria-label="Próximo depoimento"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+    </div>
+    <div style="min-width:0">
+      <div class="vtrack" id="vtrack" tabindex="0" aria-label="Depoimentos">
+        <figure class="vcard fx" style="--d:0ms">
+          <svg class="vq" viewBox="0 0 52 40" aria-hidden="true"><path d="M8 0h14l-7 40H0zM34 0h14l-7 40H26z" fill="currentColor"/></svg>
+          <blockquote>“Atendimento excelente e <b>motos sempre revisadas</b>.”</blockquote>
+          <figcaption class="vwho"><span class="vav" aria-hidden="true">R</span><span><strong>Ricardo</strong><span>Motoboy VLoca</span></span><span class="stars" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg></span></figcaption>
+        </figure>
+        <figure class="vcard fx" style="--d:150ms">
+          <svg class="vq" viewBox="0 0 52 40" aria-hidden="true"><path d="M8 0h14l-7 40H0zM34 0h14l-7 40H26z" fill="currentColor"/></svg>
+          <blockquote>“<b>Melhor escolha</b> para quem trabalha com aplicativo.”</blockquote>
+          <figcaption class="vwho"><span class="vav" aria-hidden="true">L</span><span><strong>Lucas</strong><span>Motoboy VLoca</span></span><span class="stars" role="img" aria-label="5 de 5 estrelas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2.8 2.8 5.7 6.3.9-4.6 4.4 1.1 6.2-5.6-2.9L6.4 20l1.1-6.2-4.6-4.4 6.3-.9Z"/></svg></span></figcaption>
+        </figure>
+      </div>
+      <div class="varrows vfoot-arrows"><button class="varrow" type="button" data-dir="-1" aria-label="Depoimento anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button class="varrow" type="button" data-dir="1" aria-label="Próximo depoimento"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
     </div>
   </div>
 </section>
@@ -571,8 +573,8 @@ h2.display{font-size:clamp(38px,5.4vw,78px)}
   </div>
 </footer>
 
-<div class="mcta" id="mcta"><a class="btn" href="#formulario"><span>Quero minha Yamaha</span></a></div>
 
+</div>
 <script>
 /* ===== Formulário (integração original mantida) ===== */
 (function () {
@@ -642,6 +644,30 @@ document.querySelectorAll('.qa').forEach(function (qa) {
     ans.style.height = open ? ans.scrollHeight + 'px' : '0px';
   });
 });
+
+/* ===== Depoimentos ===== */
+(function () {
+  var track = document.getElementById('vtrack');
+  if (!track) return;
+  var groups = document.querySelectorAll('.varrows');
+  function step() { var c = track.querySelector('.vcard'); return c ? c.getBoundingClientRect().width + 20 : track.clientWidth; }
+  function sync() {
+    var over = track.scrollWidth > track.clientWidth + 4;
+    groups.forEach(function (g) {
+      g.hidden = !over;
+      g.querySelector('[data-dir="-1"]').disabled = track.scrollLeft <= 4;
+      g.querySelector('[data-dir="1"]').disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    });
+  }
+  groups.forEach(function (g) {
+    g.querySelectorAll('.varrow').forEach(function (b) {
+      b.addEventListener('click', function () { track.scrollBy({ left: step() * parseInt(b.dataset.dir, 10), behavior: 'smooth' }); });
+    });
+  });
+  track.addEventListener('scroll', sync, { passive: true });
+  window.addEventListener('resize', sync);
+  sync();
+})();
 
 /* ===== Movimento ===== */
 (function () {
@@ -736,16 +762,11 @@ document.querySelectorAll('.qa').forEach(function (qa) {
   var bar = document.querySelector('.progress');
   var head = document.querySelector('.head');
   var media = document.querySelector('.hero-media');
-  var band = document.querySelector('.band-track');
   var fleet = document.getElementById('fleetImg');
   var track = document.getElementById('track');
   var steps = track.querySelectorAll('.how-step');
   var incl = document.querySelectorAll('#inclList li');
-  var mcta = document.getElementById('mcta');
   var form = document.getElementById('formulario');
-
-  /* duplica a faixa para loop contínuo */
-  var item = band.firstElementChild;
 
   var lastY = window.scrollY, vel = 0, bx = 0, dir = 1, lastT = performance.now();
 
@@ -786,10 +807,6 @@ document.querySelectorAll('.qa').forEach(function (qa) {
       li.classList.toggle('on', r.top < mid);
     });
 
-    /* CTA fixo no mobile */
-    var fRect = form.getBoundingClientRect();
-    var formVisible = fRect.top < vh && fRect.bottom > 0;
-    mcta.classList.toggle('show', y > vh * .7 && !formVisible);
 
     requestAnimationFrame(frame);
   }
